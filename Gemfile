@@ -7,9 +7,10 @@ gem 'bcrypt-ruby', '3.1.2'
 gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
+gem 'pg'
 
 group :development, :test do
-  gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'rspec-rails', '2.13.1'
 end
 
@@ -34,6 +35,6 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
+  #gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
