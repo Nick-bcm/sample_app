@@ -12,6 +12,10 @@ gem 'pg'
 group :development, :test do
   #gem 'sqlite3'
   gem 'rspec-rails', '2.13.1'
+  gem 'guard-rspec'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
@@ -20,6 +24,7 @@ group :test do
   gem 'factory_girl_rails', '4.2.0'
   gem 'cucumber-rails', '1.4.0', :require => false
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
+  gem 'libnotify'
 end
 
 gem 'sass-rails', '~> 4.0.2'
