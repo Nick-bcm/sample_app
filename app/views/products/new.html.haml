@@ -1,0 +1,19 @@
+%h1 Products#new
+
+%p Find me in app/views/products/new.html.erb
+
+= form_for @product do |f|
+	= f.label :title
+	= f.text_field :title
+
+	= f.label :weight
+	= f.number_field :weight
+
+	= f.label :price
+	= f.number_field :price
+
+	=f.submit 'submit'
+
+%p= t('title')
+
+= render 'products/shared/links'

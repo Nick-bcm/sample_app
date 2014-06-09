@@ -1,4 +1,11 @@
 SampleApp::Application.routes.draw do
+  post "products" => "products#create"
+  get "products/new"
+  get "products/edit"
+  put "products/update"
+  delete "products/:id" => 'products#destroy'
+  get "products" => 'products#index', as: :products_index
+  get "products/:id" => 'products#show', as: :product
   get "static_pages/home"
   get "static_pages/help"
   get "static_pages/about"

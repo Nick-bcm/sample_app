@@ -1,0 +1,11 @@
+%h1 Products#index
+
+%p= link_to "Добавить", products_new_path
+
+- unless @products.empty?
+	- @products.each do |product|
+		%p
+			= link_to product.title, product
+			= link_to 'Удалить', product, method: :delete, data: { confirm: 'Вы уверены?' }
+- else
+	%p Продуктов нет.
